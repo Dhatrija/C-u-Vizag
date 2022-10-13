@@ -1,0 +1,50 @@
+<html>
+<head>
+<title> Calculator</title>
+</head>
+
+<body>
+<h2>Type the text in Numbers format.</h2>
+
+
+<script>
+function AdditionBy() 
+{ 
+num1 = document.getElementById("first").value; 
+num2 = document.getElementById("second").value; 
+document.getElementById("result").innerHTML = Number(num1) + Number(num2); 
+} 
+ 
+function SubtractionBy()
+{
+num1 = document.getElementById("first").value; 
+num2 = document.getElementById("second").value; 
+document.getElementById("result2").innerHTML = Number(num1) - Number(num2); 
+} 
+function MultiplicationBy()
+{
+num1 = document.getElementById("first").value; 
+num2 = document.getElementById("second").value; 
+document.getElementById("result3").innerHTML = Number(num1) * Number(num2); 
+} 
+</script>
+Give 1st Number : <input type="text" id="first" ><br>
+<br> 
+Give 2nd Number : <input type="text" id="second"  /><br>
+<br>
+<input type="button" onClick="AdditionBy()" Value="Addition"  />  &nbsp
+<input type="button" onClick="SubtractionBy()"  
+Value="Subtraction" /> &nbsp
+<input type="button" onClick="MultiplicationBy()"  
+Value="Multiplication" /> 
+<p>The Result of addition is : 
+<span id = "result"></span> 
+</p> 
+<p>The  Result of subtraction is : 
+<span id = "result2"></span> 
+</p> 
+<p>The  Result of multiplication is : 
+<span id = "result3"></span> 
+</p> 
+</body>
+</html>
